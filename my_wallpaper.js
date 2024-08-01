@@ -3,17 +3,17 @@ let rect_width  = 20;
 let rect_height = 20;
 
 let octoHead = 82 // controls size of octopus head aswell as colour due to if statement below
-let octoSmile = 7 // controls size of octopus smile
-let octoEye = 12
-let octoMouthStroke = 2
-let waves = 2
-let starMouth = 4
-let starEye = 6
-let wallpaperColour = 1
+let octoSmile = 7 // controls size of octopus smile aswell as seaweed colour due to if statement below
+let octoEye = 12 // controls the size of the black ellipse representing octopus eye
+let octoMouthStroke = 2 //controls the strokeWeight of the octopus mouth
+let waves = 3 // controls the strokeWeight of the wave pattern
+let starMouth = 4 //controls the size of the starfish mouth aswell as starfish colour due to if statement below
+let starEye = 6 //controls size of the black ellipse representing the starfish eye
+let wallpaperColour = 1 //controls the colour of the background due to if statement below
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(A3);
+  pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
